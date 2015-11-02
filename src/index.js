@@ -1,2 +1,2 @@
-angular.module('angular-equal-directive', [])
+window.AngularEqualDirective = angular.module('angular-equal-directive', [])
 .directive('equal', require('./equal'))
