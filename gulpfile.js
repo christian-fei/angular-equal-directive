@@ -24,7 +24,6 @@ gulp.task('build', function() {
     .pipe(source('angular-equal-directive.min.js'))
     .pipe(umd({
       exports: function(file) {return 'AngularEqualDirective'},
-      namespace: function(file) {return 'AngularEqualDirective'},
     }))
     .pipe(buffer())
     .pipe(uglify())
